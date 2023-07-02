@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birth Day Ezee</title>
+<style type="text/css">
+*{margin:0; padding:0;}
+#sec1>h2{text-align:center; margin:50px 0;}
+.box {display:flex; justify-content:center; margin:50% 0;
+ flex-direction:column; align-items:center;}
+.top{ background:rgb(0,19,32,0.8); height:30px; width:230px;}
+.box-body{background:rgb(0,19,32,0.8); height:100px; width:200px; box-shadow:0px 10px 0px rgb(0,19,32,0.99) inset;}
+.ribban{background:rgb(252,0,0,0.76); height:130px; width:30px; position:absolute;}
+.box>span{position:absolute; cursor:pointer;}
+.box>span{text-decoration:none; color:white; font-size:20px;}
+#sec1 {display:block;}
+
+.boloon1{ position:absolute; top:100px; left:5px;
+background:rgb(252,0,0,0.61); height:80px; width:60px; border-radius:50%;}
+.boloon2{ position:absolute; top:60px; left:25%;
+background:rgb(143,214,82,0.61); height:80px; width:60px; border-radius:50%;}
+.boloon3{ position:absolute; top:100px; left:50%; transform:translateX(-50%);
+background:rgb(252,224,82,0.61); height:80px; width:60px; border-radius:50%;}
+.boloon4{ position:absolute; top:30px;  right:25%;
+background:rgb(252,71,154,0.68); height:80px; width:60px; border-radius:50%;}
+.boloon5{ position:absolute; top:70px; right:5px;
+background:rgb(52,0,190,0.69); height:80px; width:60px; border-radius:50%;}
+.boloon6{ position:absolute; top:10px; left:10%;
+background:rgb(100,252,252,0.61); height:80px; width:60px; border-radius:50%;}
+.boloon7{ position:absolute; top:10px; right:10%;
+background:rgb(252,102,30,0.64); height:80px; width:60px; border-radius:50%;}
+.boloon8{ position:absolute; top:0px; left:35%;
+background:rgb(219,13,101,0.61); height:80px; width:60px; border-radius:50%;}
+.boloon9{ position:absolute; top:10px; right:35%;
+background:rgb(252,143,86,0.69); height:80px; width:60px; border-radius:50%;}
+#b{transition:display 2s ease-in-out 2s; animation-name:boloon; animation-duration:4s; animation-iteration-count:infinite;}
+#b:hover {visibility:hidden; }
+@keyframes boloon{
+ 0%{transform-origin:rotate(0deg); }
+ 25%{transform:rotate(5deg); }
+ 50%{transform:rotate(0deg); }
+ 75%{transform:rotate(-5deg); }
+ 100%{transform-origin:rotate(0deg);}
+}
+.string{ background:black; height:100vh; width:1px; position:relative;
+top:80px; left:50%;}
+
+.cake {position:relative; display:flex; flex-direction:column; 
+justify-content:center; align-items:center; top:370px;}
+.c-top {background:#f7a1cb; height:30px; width:200px; position:absolute;
+ top:0; border-radius:20px 20px 0 0; }
+.c-middle { background:rgb(51,34,10,1); width:200px; height:100px;
+ border-radius:20px 20px 0 0; box-shadow:-100px 0 0 rgb(0,0,0,0.1) inset;}
+.c-bottom {background:#dcedf5; width:240px; height:10px; 
+border-radius:2px; box-shadow:120px 0px 0px rgb(234,244,252,1) inset;}
+.c-t1{background:#f7a1cb;position:absolute; left:140px; height:40px; width:40px; border-radius:0 0 50% 50%;}
+.c-t2{background:#f7a1cb;position:absolute; left:100px; height:40px; width:40px; border-radius:0 0 50% 50%;}
+.c-t3{background:#f7a1cb;position:absolute; left:60px; height:40px; width:40px; border-radius:0 0 50% 50%;}
+.c-t4{background:#f7a1cb;position:absolute; left:20px; height:40px; width:40px; border-radius:0 0 50% 50%;}
+
+.can-body {background:#ff4242; height:60px; width:10px; position:absolute; bottom:100px;}
+.fire{height:20px; width:10px; background:rgb(243,179,0,1); position:absolute; bottom:160px; box-shadow:0 0 5px yellow;
+border-radius:0 50% 50% 50%; animation-name:fire; animation-duration:4s; animation-iteration-count:infinite;}
+@keyframes fire{
+  0%{width:10px;}
+  30%{width:8px; transform:rotate(10deg);}
+  50%{width:10px;}
+  60%{width:8px;transform:rotate(10deg);}
+  100%{width:10px;}
+}
+.card {margin:auto; width:200px; background:rgb(252,210,124,1); border-radius:0 50px 0 50px;
+position:relative; top:400px; padding:10px; height:150px;color:white;}
+.card>p{text-align:center; line-height:30px; letter-spacing:1px;}
+#sec2{display:none;}
+
+.sec3{ display:none; flex-wrap:wrap; width:100vw;
+justify-content:center; align-items:center;}
+.sec3>img{width:47%; height:100%; padding:2px; position:relative;
+}
+.sec3>p{position:relative; font-size:20px; font-weight:bold;
+line-height:80px;}
+@keyframes posteranima{
+ from{left:-300px;}
+ to{left:0px;}
+}
+@keyframes posteranima-2{
+ from{right:-300px;}
+ to{right:0px;}
+}
+
+.img-r{animation-name:posteranima-2; animation-duration:3s;}
+.img-l{animation-name:posteranima; animation-duration:3s;}
+
+</style>
+</head>
+<body>
+<section id="sec1" >
+<h2>Please Open The Box <br>BirthDay Girl</h2>
+<div class="box" >
+ <div class="top"></div>
+ <div class="box-body"></div>
+ <div class="ribban" ></div>
+ <span onclick="myfun()" >Click Me</span>
+</div>
+</section>
+<section id="sec2" >
+<div class="boloon1" id="b"  ><div class="string" ></div></div>
+<div class="boloon2" id="b" ><div class="string" ></div></div>
+<div class="boloon3" id="b" ><div class="string" ></div></div>
+<div class="boloon4" id="b" ><div class="string" ></div></div>
+<div class="boloon5" id="b" ><div class="string" ></div></div>
+<div class="boloon6" id="b" ><div class="string" ></div></div>
+<div class="boloon7" id="b" ><div class="string" ></div></div>
+<div class="boloon8" id="b" ><div class="string" ></div></div>
+<div class="boloon9" id="b" ><div class="string" ></div></div>
+
+<div class="cake" >
+<div class="candel" >
+ <div class="fire" ></div>
+ <div class="can-body" ></div>
+</div>
+<div class="c-top" >
+ <div class="c-t1" ></div>
+ <div class="c-t2" ></div>
+ <div class="c-t3" ></div>
+ <div class="c-t4" ></div>
+ </div>
+<div class="c-middle" ></div>
+<div class="c-bottom" ></div>
+</div>
+
+<div class="card" >
+<p>
+"Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!"
+</p>
+</div>
+</section>
+
+<section class="sec3" id="sec3">
+<p> Happy Birthday My Best Friend Ezee <br></p>
+ <img class="img-l"  src="/storage/emulated/0/Pictures/Screenshots/Screenshot_20230625_160026.jpg" ></div>
+ <img class="img-r" src="/storage/emulated/0/Pictures/Screenshots/Screenshot_2023_0601_120632.png" ></div>
+ <img class="img-l" src="/storage/emulated/0/DCIM/Camera/IMG_20230512_172304.jpg" ></div>
+ <img class="img-r" src="/storage/emulated/0/Pictures/Screenshots/IMG_20230429_074611.jpg" ></div>
+ <img class="img-l" src="/storage/emulated/0/Pictures/Screenshots/Screenshot_2023_0327_173307.png" ></div>
+ <img class="img-r" src="/storage/emulated/0/Pictures/Screenshots/IMG_20230325_155327.jpg" ></div>
+ <img class="img-l" src="/storage/emulated/0/Pictures/Screenshots/Screenshot_20230308_103214.jpg" ></div>
+ <img class="img-r" src="/storage/emulated/0/Pictures/Screenshots/Screenshot_20230306_194058.jpg" ></div>
+ <img class="img-l" src="/storage/emulated/0/Pictures/Screenshots/IMG_20230117_214839.jpg" ></div>
+ <img class="img-r" src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20221228-WA0000.jpg" ></div>
+<br><p>
+..... Sorry Sorry Sorry ..... 
+</p>
+</section>
+<script type="text/javascript">
+let section1= document.getElementById('sec1');
+let section2= document.getElementById('sec2');
+let section3= document.getElementById('sec3');
+
+let music = new Audio('/storage/emulated/0/AudioEditorCutter/VideoToAudio/Happy Birthday song.m4a');
+function musicPlay(){
+ music.play();
+}
+function myfun(){
+ section1.style.display="none";
+ section2.style.display="block";
+ musicPlay();
+ setTimeout(myfun2,30000);
+}
+function myfun2(){
+section1.style.display="none";
+section2.style.display="none";
+section3.style.display="flex";
+}
+</script>
+</body>
+</html>
